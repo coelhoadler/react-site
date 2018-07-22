@@ -1,0 +1,4 @@
+.sidebar__container {
+    border: 1px solid blue;
+    flex: 2;
+}
