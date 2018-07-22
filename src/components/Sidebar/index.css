@@ -17,14 +17,18 @@
 
 /* sections */
 
-.-motivation {
-    border: 1px solid red;
-}
-
 .-section {
     width: 100%;
 }
 
+.-motivation {
+    border: 1px solid red;
+}
+
 .-skills {
     border: 1px solid red;
+}
+
+.-contact {
+    border: 1px solid red;    
 }

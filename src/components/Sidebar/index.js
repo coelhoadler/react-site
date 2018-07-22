@@ -52,12 +52,19 @@ const Sidebar = () => {
             
             <section className="-section -contact">
                 <SectionTitle content='Entre em contato' />
-                <i class="icon icon-envelop"></i>
-                <i class="icon icon-phone"></i>
+                <ul>
+                    <li>
+                        <i className="icon icon-envelop"></i>
+                        <span>adler.coelho.santos@icloud.com</span>
+                    </li>
+                    <li>
+                        <i className="icon icon-phone"></i>
+                        <span>(13) 99627 5325</span>
+                    </li>                    
+                </ul>
             </section>    
         </div>
     );
-
 }
 
 export default Sidebar;
