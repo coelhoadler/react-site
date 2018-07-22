@@ -26,7 +26,7 @@ const Sidebar = () => {
                 </blockquote>                
             </section>
 
-            <section className='-skills'>
+            <section className='-section -skills'>
                 <SectionTitle content='Algumas skills' />
                 
                 <SkillProgress
@@ -50,7 +50,7 @@ const Sidebar = () => {
                     label='Node' />
             </section>
             
-            <section>
+            <section className="-section -contact">
                 <SectionTitle content='Entre em contato' />
                 <i class="icon icon-envelop"></i>
                 <i class="icon icon-phone"></i>
