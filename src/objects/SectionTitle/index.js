@@ -1,8 +1,10 @@
 import React from 'react';
 
+import './index.css';
+
 const SectionTitle = ({content}) => {
     return(
-        <h3>{content}</h3>
+        <label className="-label">{content}</label>
     );
 }
 

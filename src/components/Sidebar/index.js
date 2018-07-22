@@ -4,40 +4,57 @@ import './index.css';
 import Image from './Image';
 import SectionTitle from '../../objects/SectionTitle';
 import SocialList from './SocialList';
+import SkillProgress from '../../objects/SkilProgress';
 
 const Sidebar = () => {
 
     return(
         <div className='sidebar__container'>
+            
             <Image />
             <h1 className="-name">Adler Coelho Santos</h1>
             <h2 className="-role">Front-end developer</h2>
 
             <SocialList />
 
-            <SectionTitle tag='h3' content='O que me motiva?' />
+            <section className='-motivation'>
+                <SectionTitle content='O que me motiva?' />
+                <blockquote>
+                    A cada dia que passa aumenta mais o meu interesse pelo desenvolvimento Web e as tecnologias que
+                    fazem parte desse ambiente incrível. E vejo que a possibilidade de mudar vidas está diretamente ligada
+                    à essa ferramenta.
+                </blockquote>                
+            </section>
 
-            <blockquote>
-                A cada dia que passa aumenta mais o meu interesse pelo desenvolvimento Web e as tecnologias que
-                fazem parte desse ambiente incrível. E vejo que a possibilidade de mudar vidas está diretamente ligada
-                à essa ferramenta.                
-            </blockquote>
+            <section className='-skills'>
+                <SectionTitle content='Algumas skills' />
+                
+                <SkillProgress
+                    progress='90'
+                    label='HTML, CSS, JS (purão)' />
 
-            <SectionTitle content='Skills' />
-            {/* Algumas skills que posso colocar
+                <SkillProgress
+                    progress='70'
+                    label='React' />
+
+                <SkillProgress
+                    progress='85'
+                    label='TypeScript' />
+
+                <SkillProgress
+                    progress='80'
+                    label='Builders' />
+
+                <SkillProgress
+                    progress='80'
+                    label='Node' />
+            </section>
             
-            - Html, CSS (c/ pré processador), JS (purão)
-            - Angular
-            - React
-            - TypeScript
-            - Builders
-            - Node */}
-            
-            <SectionTitle tag='h3' content='Entre em contato' />
-
-            <i class="icon icon-envelop"></i>
-            <i class="icon icon-phone"></i>
-
+            <section>
+                <SectionTitle content='Entre em contato' />
+                <i class="icon icon-envelop"></i>
+                <i class="icon icon-phone"></i>
+            </section>    
         </div>
     );
 

@@ -1,6 +1,7 @@
 .social__container {
     display: flex;
-    width: 50%;
+    width: 38%;
+    padding: 0;
 
     justify-content: space-around;
     list-style: none;

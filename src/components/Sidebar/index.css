@@ -14,3 +14,13 @@
 .-role {
     text-align: center;
 }
+
+/* sections */
+
+.-motivation {
+    border: 1px solid red;
+}
+
+.-skills {
+    border: 1px solid red;
+}
