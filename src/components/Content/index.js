@@ -1,8 +1,10 @@
-import { React } from "react";
+import React from "react";
+import './index.css';
 
 const Content = () => {
     return(
-        'content'
+        <div className="content__container">
+        </div>
     );
 };
 
