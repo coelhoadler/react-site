@@ -10,6 +10,21 @@ const Sidebar = () => {
             <Image />
             <h1>Adler Coelho Santos</h1>
             <h2>Front-end developer</h2>
+
+            <ul>
+                <li>
+                    <i className="icon icon-facebook"></i>
+                </li>
+                <li>
+                    <i className="icon icon-linkedin"></i>
+                </li>
+                <li>
+                    <i className="icon icon-github"></i>
+                </li>
+                <li>
+                    <i className="icon icon-instagram"></i>
+                </li>
+            </ul>
         </div>
     );
 
