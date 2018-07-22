@@ -3,6 +3,7 @@ import React from 'react';
 import './index.css';
 import Image from './Image';
 import SectionTitle from '../../objects/SectionTitle';
+import SocialList from './SocialList';
 
 const Sidebar = () => {
 
@@ -12,20 +13,7 @@ const Sidebar = () => {
             <h1 className="-name">Adler Coelho Santos</h1>
             <h2 className="-role">Front-end developer</h2>
 
-            <ul>
-                <li>
-                    <i className='icon icon-facebook'></i>
-                </li>
-                <li>
-                    <i className='icon icon-linkedin'></i>
-                </li>
-                <li>
-                    <i className='icon icon-github'></i>
-                </li>
-                <li>
-                    <i className='icon icon-instagram'></i>
-                </li>
-            </ul>
+            <SocialList />
 
             <SectionTitle tag='h3' content='O que me motiva?' />
 
@@ -35,7 +23,7 @@ const Sidebar = () => {
                 à essa ferramenta.                
             </blockquote>
 
-            <SectionTitle tag='h3' content='Skills' />
+            <SectionTitle content='Skills' />
             {/* - Html, CSS (c/ pré processador), JS (purão)
             - Angular
             - React
