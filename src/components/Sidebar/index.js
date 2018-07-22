@@ -24,14 +24,15 @@ const Sidebar = () => {
             </blockquote>
 
             <SectionTitle content='Skills' />
-            {/* - Html, CSS (c/ pré processador), JS (purão)
+            {/* Algumas skills que posso colocar
+            
+            - Html, CSS (c/ pré processador), JS (purão)
             - Angular
             - React
             - TypeScript
             - Builders
             - Node */}
             
-
             <SectionTitle tag='h3' content='Entre em contato' />
 
             <i class="icon icon-envelop"></i>
