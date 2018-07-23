@@ -6,31 +6,29 @@ import Content from './components/Content/index';
 
 class App extends Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
-      data: { }
+      profile: []
     }
   }
 
   render() {
-    console.log('=> render');
-    
     return (
       <div className="App">
         <Sidebar />
-        <Content />
+        <Content 
+          jobs={ this.state.profile.experience } />
       </div>
     );
   }
 
   componentDidMount() {
-    console.log('=> did app.jsx');
     fetch('https://meu-site-5f4d8.firebaseio.com/.json')
         .then(res => res.json())
         .then(data => {
-            console.log(data);
-            this.state.data = data;
+            console.log('retorno do data => 🔥💿', data);
+            this.setState({ profile: data });
         })
   }
 }
