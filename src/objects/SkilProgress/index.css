@@ -1,0 +1,14 @@
+.-container {
+    margin-bottom: .5rem;
+}
+
+.-outer {
+    width: 100%;
+    height: 20px;
+    background: #ccc;
+}
+
+.-inner {
+    background: red;
+    height: 100%;
+}

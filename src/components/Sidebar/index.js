@@ -17,7 +17,7 @@ const Sidebar = () => {
 
             <SocialList />
 
-            <section className='-motivation'>
+            <section className='-section -motivation'>
                 <SectionTitle content='O que me motiva?' />
                 <blockquote>
                     A cada dia que passa aumenta mais o meu interesse pelo desenvolvimento Web e as tecnologias que
@@ -32,6 +32,10 @@ const Sidebar = () => {
                 <SkillProgress
                     progress='90'
                     label='HTML, CSS, JS (purão)' />
+
+                <SkillProgress
+                    progress='85'
+                    label='Angular' />
 
                 <SkillProgress
                     progress='70'

@@ -4,6 +4,8 @@ import './App.css';
 import Sidebar from './components/Sidebar/index';
 import Content from './components/Content/index';
 
+import Address from './api.adress';
+
 class App extends Component {
 
   constructor(props) {
@@ -24,11 +26,13 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch('https://meu-site-5f4d8.firebaseio.com/.json')
+    fetch(Address.API)
         .then(res => res.json())
         .then(data => {
-            console.log('retorno do data => 🔥💿', data);
+            console.log(`retorno do data => 🔥💿`, data);
             this.setState({ profile: data });
+        }).catch(err => {
+          console.error(`🚫 Error to load data`, err);
         })
   }
 }
