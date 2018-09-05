@@ -27,13 +27,13 @@ class App extends Component {
 
   componentDidMount() {
     fetch(Address.API)
-        .then(res => res.json())
-        .then(data => {
-            console.log(`retorno do data => 🔥💿`, data);
-            this.setState({ profile: data });
-        }).catch(err => {
-          console.error(`🚫 Error to load data`, err);
-        })
+      .then(res => res.json())
+      .then(data => {
+          // console.log(`retorno do data => 🔥💿`, data);
+          this.setState({ profile: data });
+      }).catch(err => {
+        console.error(`🚫 Error to load data`, err);
+      })
   }
 }
 

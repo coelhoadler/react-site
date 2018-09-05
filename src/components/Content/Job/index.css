@@ -1,0 +1,12 @@
+.job__item {
+    margin: .8em 0;
+}
+
+.job__item--title {
+    margin-bottom: .5em;
+    font-weight: bold;
+}
+
+.job__item--description {
+    line-height: 1.5em;
+}
